@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/prediction.css">
+    <title>AurOracle Prediction</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+        <section class="hero">
+            <div class="navbar">
+                <div class="logo">
+                    AurOracle
+                </div>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#kp">Predict KP</a></li>
+                    <li><a href="#sl">Predict Solar wind</a></li>
+                    <li><a href="#rl">Real Time Prediction (Kp)</a></li>
+                    <li><a href="/education">Education</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="heading white">
+                        <span style="color: #75C846;">Prediction</span> <br>
+                        In the beginning, there <br> was light
+                    </h2>
+                    <p class="para-line white">
+                        In the end, it is about embracing light, the light of knowledge, prediction, and accuracy, for these are the beacons that guide us through the labyrinth of uncertainty and ignorance, illuminating our path toward understanding, progress, and wise decision-making.
+                    </p>
+                    <button class="btn btn-white">
+						<a href="#kp">
+                            Predict Now &nbsp; <ion-icon name="caret-forward-outline"></ion-icon>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+	<section class="learn_1" id="kp">
+        <h2 class="heading">
+            Predict KP Value:
+        </h2>
+        <div id="result" style="display: flex; justify-content: center; align-items: center; font-size: 22px; font-weight: 500;">
+
+        </div>
+        <br>
+		<div class="container">
+			<div class="row">
+                
+				<div class="col">
+	
+                <form action="" id="inputForm">
+
+                    <label for="magnitude">Magnitude (nT):</label>
+                    <input   id="magnitude" name="magnitude" required><br>
+
+                    <label for="vectorMag">Vector Mag (nT):</label>
+                    <input   id="vectorMag" name="vectorMag" required><br>
+
+                    <label for="bx">BX (nT):</label>
+                    <input   id="bx" name="bx" required><br>
+
+                    <label for="by">BY (nT):</label>
+                    <input   id="by" name="by" required><br>
+
+                    <label for="bz">BZ (nT):</label>
+                    <input   id="bz" name="bz" required ><br>
+
+
+                    <label for="rmsScalar">RMS SD B scalar (nT):</label>
+                    <input   id="rmsScalar" name="rmsScalar" required><br>
+
+                    <label for="rmsVector">RMS SD field vector (nT):</label>
+                    <input   id="rmsVector" name="rmsVector" required><br>
+				</div>
+				<div class="col">
+                    <label for="rmsBx">RMS SD Bx (nT GSE):</label>
+                    <input   id="rmsBx" name="rmsBx" required><br>
+
+                    <label for="rmsBy">RMS SD By (nT GSE):</label>
+                    <input   id="rmsBy" name="rmsBy" required><br>
+
+                    <label for="rmsBz">RMS SD Bz (nT GSE):</label>
+                    <input   id="rmsBz" name="rmsBz" required><br>
+
+                    <label for="speed">Speed (km/s):</label>
+                    <input   id="speed" name="speed" required><br>
+
+                    <label for="density">Proton Density (n/cc):</label>
+                    <input   id="density" name="density" required><br>
+
+                    <label for="temperature">Temperature (K):</label>
+                    <input   id="temperature" name="temperature" required><br>
+
+                    <button type="submit">Predict</button>
+				</div>
+            </form>
+
+			</div>
+		</div>
+	</section>
+
+    <section class="learn_2" style="background-color: #FAF8FF" id="sl">
+        <br>
+        <div class="container">
+            <div class="row">
+    
+                <div class="col">
+                    <h2 class="heading">
+                        Solar wind plasma system:
+                    </h2>
+                    <p class="para-line">
+                        Using Kp Index this model is capable to predict the approximate data of the solar wind plasma system
+                    </p>
+                    <form action="" id="prediction-form">
+                        <label for="kp">Kp-Index</label>
+                        <input  id="kpap" name="kp" required><br>
+                        <button type="submit">Predict</button>
+                    </form>
+                </div>
+                <div class="col">
+                    <p class="para-line" id="data-container" style="color: #3269FF; font-weight: 500;">
+                        
+                    </p>
+                    <img src="../static/img/Prediction/6d138f9b-0670-4fe3-9515-14567ba6a54f.JPG" class="learn_2img">
+                 
+                </div>
+    
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <section class="learn_2" id="rl">
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="../static/img/Prediction/434caff8-b17b-47c9-ad1d-ced66b73de03.JPG" class="learn_2img">
+                </div>
+                <div class="col">
+                    <h2 class="heading">
+                        Real Time Prediction (Kp):
+                    </h2>
+                    <p class="para-line">
+                        Our trained models are also capable of predicting in Real Time data, json.
+                    </p>
+                    <form action="" id="prediction-form">
+                        <label for="kp">URL</label>
+                        <input  id="kpap" name="kp" required><br>
+                        <button onclick="message()" id="in">Predict Real Time</button>
+                    </form>
+                </div>
+
+    
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <footer>
+        <br>
+        <ul class="list-footer">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Prediction</a></li>
+            <li><a href="/education">Education</a></li>
+
+        </ul>
+        <div class="social-media">
+            <a href="https://instagram.com/auroracle23?igshid=MzRlODBiNWFlZA=="><ion-icon name="logo-instagram" id="icons"></ion-icon></a>
+            <a href="https://www.youtube.com/@AurOracle-me9fc"><ion-icon name="logo-youtube" id="icons"></ion-icon></a>
+        </div>
+        <p class="copyrights" style="font-size: 25px;">Aur<span >Oracle</span></p>
+    </footer>
+
+    <script src="../static/index.js"></script>
+    </body>
+    </html>
