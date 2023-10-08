@@ -1,5 +1,5 @@
 # AurOracle-Flask
- # Front End Demo URL: https://auroracle.netlify.app
+
  
 # Step 1
 Install the Library in the requirements.txt
