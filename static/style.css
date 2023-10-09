@@ -99,41 +99,6 @@ img
 
 
 
-.navbar{
-    font-size: 21px;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
-    height: 70px;
-}
-
-.navbar .logo{
-	color: white;
-	font-size: 25px;
-}
-.navbar ul{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-}
-
-.navbar ul li{
-    list-style-type: none;
-}
-.navbar ul li a{
-    text-decoration: none;
-    padding-left: 40px;
-    transition: 0.5s;
-	color: white;
-	font-size: 18px;
-}
-
-.navbar ul li a:hover{
-    color: #f5af19;
-}
-
-
 
 
 
@@ -568,4 +533,118 @@ footer {
   img {
     max-width: 80%; /* Adjust the percentage as needed for the desired size */
   }
+}
+
+
+
+
+a 
+{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.logo
+{
+    font-size: 22px;
+}
+nav 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+.nav-list
+{
+    list-style: none;
+    display: flex;
+}
+.nav-list li
+{
+    margin-right: 3px;
+    margin-left: 32px;
+}
+.nav-list li a
+{
+	font-size: 18px;
+	transition: 0.5s;
+}
+.nav-list li a:hover
+{
+	color: #f5af19;
+}
+.mobile-menu
+{
+    cursor:pointer;
+    display: none;
+}
+
+.mobile-menu div
+{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px)
+{
+
+    .nav-list
+    {
+        position: absolute;
+        top: 8vh;
+		right: 130px;
+        width: 100px; 
+        height: 25vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li
+    {
+        margin-right: 0;
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu
+    {
+        display: block;
+    }
+}
+
+.nav-list.active
+{
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade
+{
+    from {
+        opacity: 0;
+        transform: translateX(50px)
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.mobile-menu.active .line1
+{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2
+{
+    opacity: 0;
+}
+.mobile-menu.active .line3
+{
+    transform: rotate(45deg) translate(-5px, -7px);
 }
