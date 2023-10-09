@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         
-        fetch('http://127.0.0.1:5050/predictkp', {
+        fetch('https://auroracle.onrender.com/predictkp', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); 
         const kp = document.getElementById("kpap").value
         
-        fetch("http://127.0.0.1:5050/predictdata", {
+        fetch("https://auroracle.onrender.com/predictdata", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
