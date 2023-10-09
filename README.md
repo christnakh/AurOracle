@@ -1,6 +1,6 @@
 # AurOracle-Flask
 
-# You can check our full website with the design and the model on : https://auroracle.onrender.com/prediction
+# You can check our full website with the design and the model on : https://auroracle.onrender.com/
 
 
 # Step 1
