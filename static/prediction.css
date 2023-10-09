@@ -391,3 +391,8 @@ footer {
 
 
 
+@media (max-width: 768px) {
+  img {
+    max-width: 80%; /* Adjust the percentage as needed for the desired size */
+  }
+}
