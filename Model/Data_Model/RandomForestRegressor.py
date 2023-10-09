@@ -20,5 +20,5 @@ multioutput_regressor = MultiOutputRegressor(rf_regressor)
 multioutput_regressor.fit(X_scaled, y)
 
 joblib.dump(multioutput_regressor,
-            'multioutput_regression_model.pkl', protocol=4)
-joblib.dump(scaler, 'multiouput_standard_scaler.pkl', protocol=4)
+            'multioutput_regression_model.pkl')
+joblib.dump(scaler, 'multiouput_standard_scaler.pkl')
