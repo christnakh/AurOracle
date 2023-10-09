@@ -1,8 +1,6 @@
 # AurOracle-Flask
 
-# You can check our frontend design here Url: https://auroracle.netlify.app
-
-# You can check our full website with the design and the model on : http://auroracle.pythonanywhere.com/
+# You can check our full website with the design and the model on : https://auroracle.onrender.com/prediction
 
 
 # Step 1
