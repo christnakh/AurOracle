@@ -35,9 +35,11 @@
                         <span style="color: #75C846;">Prediction</span> <br>
                         In the beginning, there <br> was light
                     </h2>
-                    <p class="para-line white">
-                        In the end, it is about embracing light, the light of knowledge, prediction, and accuracy, for these are the beacons that guide us through the labyrinth of uncertainty and ignorance, illuminating our path toward understanding, progress, and wise decision-making.
-                    </p>
+                        <div class="back_op">
+						<p class="para-line white">
+							Exploiting <strong>DSCOVER</strong> and <strong>NASA Data</strong>, while using the power of <strong>AI</strong> and <strong>machine learning</strong>, we can <strong>predict</strong> and uncover the <strong>electromagnetic effects</strong> on Earth, particularly in relation to the <strong>Kp index</strong> and <strong>solar wind</strong>. This initiative advances our understanding of the cosmos and propels us toward new horizons in <strong>science</strong> and <strong>technology</strong>.
+						</p>
+					</div>
                     <button class="btn btn-white">
 						<a href="#kp">
                             Predict Now &nbsp; <ion-icon name="caret-forward-outline"></ion-icon>
@@ -108,7 +110,7 @@
                     <label for="temperature">Temperature (K):</label>
                     <input   id="temperature" name="temperature" required><br>
 
-                    <button type="submit">Predict</button>
+                    <button type="submit" id="predict_bb">Predict</button>
 				</div>
             </form>
 
@@ -130,8 +132,8 @@
                     </p>
                     <form action="" id="prediction-form">
                         <label for="kp">Kp-Index</label>
-                        <input  id="kpap" name="kp" required><br>
-                        <button type="submit">Predict</button>
+                        <input  id="kpap" name="kp" required placeholder="Kp-Index Between 0 and 10"><br>
+                        <button id="solar_pred" type="submit" >Predict</button>
                     </form>
                 </div>
                 <div class="col">

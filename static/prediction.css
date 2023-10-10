@@ -231,10 +231,16 @@ nav
 	text-align: center;
 }
 
-.hero .container .para-line
-{
-	margin: 1rem 0 1rem 0;
-}
+	.back_op {
+		background-color: rgba(128, 128, 128, 0.35);
+
+	}
+
+	.hero .container .para-line {
+		margin: 1rem 0;
+		color: white;
+		font-size: 16px;
+	}
 
 
 .learn_1 .container
@@ -482,3 +488,14 @@ footer {
     width: 150px;
 }
 }
+
+@media (max-width: 768px){
+	#predict_bb{
+		    display: block;
+    margin: 0 auto; /* Center horizontally */
+    text-align: center;
+	}
+#solar_pred{
+		margin: 10px;
+	}
+}	
