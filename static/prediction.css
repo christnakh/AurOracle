@@ -232,7 +232,8 @@ nav
 }
 
 	.back_op {
-		background-color: rgba(128, 128, 128, 0.35);
+				background-color: rgba(128, 0, 128, 0.12);
+
 
 	}
 
@@ -499,3 +500,7 @@ footer {
 		margin: 10px;
 	}
 }	
+
+.container input{
+    width: 100%;
+}
