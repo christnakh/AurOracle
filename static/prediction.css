@@ -469,6 +469,16 @@ footer {
 
 @media (max-width: 768px) {
   img {
-    max-width: 80%; /* Adjust the percentage as needed for the desired size */
+    max-width: 80%;
   }
+}
+
+
+@media screen and (max-width: 800px) {
+.learn_1 .container {
+    text-align: left;   
+}
+.container input {
+    width: 150px;
+}
 }
